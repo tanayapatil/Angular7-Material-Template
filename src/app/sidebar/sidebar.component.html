@@ -1,0 +1,421 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+
+
+
+
+    <div class="sidebar-img">
+      <img src="../assets/profile.png" height="60px" width="60px" class="sidebar-profile-img">
+      <div class="sidebar-dialog">
+        <a [matMenuTriggerFor]="menu"> Markarn Doe
+          <span>
+            <mat-icon svgIcon="down"></mat-icon>
+          </span>
+        </a>
+      </div>
+    </div>
+
+
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon svgIcon="setting"></mat-icon>
+        <span>Setting</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon svgIcon="myprofile"></mat-icon>
+        <span>Profile</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon svgIcon="disablenotification"></mat-icon>
+        <span>Disable notification</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon svgIcon="signout"></mat-icon>
+        <span>Sign out</span>
+      </button>
+    </mat-menu>
+
+
+    <mat-toolbar class="sidenav-color sidenav-font">Personal</mat-toolbar>
+    <mat-nav-list>
+      <div>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Dashboards </span>
+        </a>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Material Ui</span>
+        </a>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Apps</span>
+        </a>
+      </div>
+    </mat-nav-list>
+    <mat-toolbar class="sidenav-color sidenav-font">
+      Forms, Table & Widgets
+    </mat-toolbar>
+    <mat-nav-list>
+      <div>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Forms</span>
+        </a>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Tables</span>
+        </a>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Data Tables</span>
+        </a>
+        <a mat-list-item href="#">
+          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <span class="sidenav-color">Widgets</span>
+        </a>
+
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>theme-demo</span>
+      <span style="margin-left:20px;">
+        <mat-icon svgIcon="search"></mat-icon>
+      </span>
+      <span style="margin-left:990px;">
+        <a [matMenuTriggerFor]="notification">
+          <mat-icon svgIcon="comment"></mat-icon>
+        </a>
+      </span>
+      <span style="margin-left:25px;">
+        <a [matMenuTriggerFor]="messages">
+          <mat-icon svgIcon="email"></mat-icon>
+        </a>
+      </span>
+      <span style="margin-left:25px;">
+        <a [matMenuTriggerFor]="menu">
+          <img src="../assets/profile.png" height="40px" width="40px">
+        </a>
+      </span>
+      <span style="margin-left:23px;">
+        <mat-icon svgIcon="setting"></mat-icon>
+      </span>
+
+    </mat-toolbar>
+
+    <mat-menu #notification="matMenu">
+      <div mat-menu-panel class="notification-header">Notifications</div>
+      <div mat-menu-content style="width:250px;">
+
+        <div fxLayout="row" style="margin-top:10px;">
+          <div flex>
+            <button mat-fab color="primary">
+              <mat-icon svgIcon="setting"></mat-icon>
+            </button>
+          </div>
+
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Launch Admin</b>
+            <span class="notification-text">just see my new admin</span>
+          </div>
+        </div>
+        <hr>
+        <div fxLayout="row">
+          <div flex>
+            <button mat-fab color="accent">
+              <mat-icon svgIcon="setting"></mat-icon>
+            </button>
+          </div>
+
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Event today</b>
+            <span class="notification-text">just see my new admin</span>
+          </div>
+        </div>
+        <hr>
+        <div fxLayout="row">
+          <div flex>
+            <button mat-fab color="warn">
+              <mat-icon svgIcon="setting"></mat-icon>
+            </button>
+          </div>
+
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Launch Admin</b>
+            <span class="notification-text">just see my new admin</span>
+          </div>
+        </div>
+
+      </div>
+    </mat-menu>
+
+    <mat-menu #messages="matMenu">
+      <div mat-menu-panel class="notification-header">New Messages</div>
+      <div mat-menu-content style="width:250px;">
+
+        <div fxLayout="row" style="margin-top:10px;">
+          <div flex>
+            <img src="../assets/profile.png" height="40px" width="40px">
+          </div>
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Pawan Kumar</b>
+            <span class="notification-text">just see my new admin</span>
+            <span class="notification-text">9.30AM</span>
+          </div>
+        </div>
+
+        <div fxLayout="row" style="margin-top:10px;">
+          <div flex>
+            <img src="../assets/2.jpg" height="40px" width="40px" class="rounded-img">
+          </div>
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Sonu Nigam</b>
+            <span class="notification-text">just see my new admin</span>
+            <span class="notification-text">9.30AM</span>
+          </div>
+        </div>
+
+        <div fxLayout="row" style="margin-top:10px;">
+          <div flex>
+            <img src="../assets/3.jpg" height="40px" width="40px" class="rounded-img">
+          </div>
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Arjit Sign</b>
+            <span class="notification-text">just see my new admin</span>
+            <span class="notification-text">9.30AM</span>
+          </div>
+        </div>
+
+        <div fxLayout="row" style="margin-top:10px;">
+          <div flex>
+            <img src="../assets/2.jpg" height="40px" width="40px" class="rounded-img">
+          </div>
+          <div flex style="margin-left:10px;">
+            <b class="notification-heading">Sonu Nigam</b>
+            <span class="notification-text">just see my new admin</span>
+            <span class="notification-text">9.30AM</span>
+          </div>
+        </div>
+
+
+      </div>
+    </mat-menu>
+
+
+
+    <br>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="0.5%">
+      <div fxFlex="20" class="firstrow">
+        <div fxLayout="row" fxFill>
+          <div fxFlex="40" class="iconalign">
+            <div class="circle circle circle-1">
+              <mat-icon class="image" svgIcon="client"></mat-icon>
+            </div>
+          </div>
+          <div fxFlex="50" fxFill>
+            <div class="first-row-text">
+              <b style="font-size:25px;">386</b><br>
+              New Clients
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div fxFlex="20" class="firstrow">
+        <div fxLayout="row" fxFill>
+          <div fxFlex="40" class="iconalign">
+            <div class="circle-yellow circle">
+              <mat-icon class="image" svgIcon="client"></mat-icon>
+            </div>
+          </div>
+          <div fxFlex="50" fxFill>
+            <div class="first-row-text">
+              <b style="font-size:25px;">386</b><br>
+              New Clients
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div fxFlex="20" class="firstrow">
+        <div fxLayout="row" fxFill>
+          <div fxFlex="40" class="iconalign">
+            <div class="circle-blue circle">
+              <mat-icon class="image" svgIcon="client"></mat-icon>
+            </div>
+          </div>
+          <div fxFlex="50" fxFill>
+            <div class="first-row-text">
+              <b style="font-size:25px;">386</b><br>
+              New Clients
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div fxFlex="20" class="firstrow">
+        <div fxLayout="row" fxFill>
+          <div fxFlex="40" class="iconalign">
+            <div class="circle-pink circle">
+              <mat-icon class="image" svgIcon="client"></mat-icon>
+            </div>
+          </div>
+          <div fxFlex="50" fxFill>
+            <div class="first-row-text">
+              <b style="font-size:25px;">386</b><br>
+              New Clients
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="0.5%">
+      <div fxFlex="70" class="secondrow">1 </div>
+      <div fxFlex="20" class="secondrow">
+        <app-chart></app-chart>
+      </div>
+    </div>
+
+    <br>
+
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign="space-around center"
+      fxLayoutGap="0.5%">
+      <div fxFlex="28" class="thirdrow1">
+        <div fxLayout="row  ">
+          <div fxFlex="40" class="iconalign">
+            <div class="third-row-text">
+              <div class="third-text1"><b>Purches</b></div>
+              <div class="third-text2">March 2017</div>
+              <p class="third-text3">35487</p>
+            </div>
+          </div>
+          <div fxFlex="50">2</div>
+        </div>
+      </div>
+
+      <div fxFlex="28" class="thirdrow">
+        <div fxLayout="row  ">
+          <div fxFlex="40" class="iconalign">
+            <div class="third-row-text">
+              <div class="third-text1"><b>Expense</b></div>
+              <div class="third-text2">March 2017</div>
+              <p class="third-text3">35487</p>
+            </div>
+          </div>
+          <div fxFlex="50">2</div>
+        </div>
+      </div>
+
+      <div fxFlex="28" class="thirdrow3">
+        <div fxLayout="row  ">
+          <div fxFlex="40" class="iconalign">
+            <div class="third-row-text">
+              <div class="third-text1"><b>Income</b></div>
+              <div class="third-text2">March 2017</div>
+              <p class="third-text3">35487</p>
+            </div>
+          </div>
+          <div fxFlex="50">2</div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="0.5%">
+      <div fxFlex="33">
+        <mat-card>
+          <div><img mat-card-image src="../assets/img.jpg"></div>
+
+          <mat-card-content>
+            <p style="font-size:23px;">
+              The Shiba Inu is the smallest of the six original and distinct
+              spitz breeds
+              of dog from Japan. A small, agile dog that copes very
+              with mountainous terrain
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <div class="button">
+              <button mat-flat-button color="primary">LIKE</button>
+              <button mat-button>SHARE</button>
+            </div>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div fxFlex="55" class="fourthrow2">2</div>
+    </div>
+    <br>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="0.5%">
+      <div fxFlex="33">
+        <mat-card>
+          <div>
+            <img mat-card-image src="../assets/profile.jpg">
+          </div>
+
+          <mat-card-content>
+            <div class="profile-text">
+              <div style="font-size:25px;">Angela Dominic</div>
+              <div style="font-size:20px;">Web Designer & Developer</div>
+            </div>
+
+            <mat-card-actions>
+              <div class="profile-button">
+                <button mat-flat-button color="primary">Follow</button>
+              </div>
+            </mat-card-actions>
+          </mat-card-content>
+
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            <div fxFlex="20">
+              <div class="profile-font">1019</div>
+              <div>Articles</div>
+
+            </div>
+            <div fxFlex="20">
+              <div class="profile-font">23,469</div>
+              <div>Followers</div>
+            </div>
+            <div fxFlex="20">
+              <div class="profile-font">6035</div>
+              <div>Likes</div>
+            </div>
+          </div>
+
+        </mat-card>
+
+      </div>
+      <div fxFlex="55" class="fourthrow2">2</div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <app-dashboard></app-dashboard> -->
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
