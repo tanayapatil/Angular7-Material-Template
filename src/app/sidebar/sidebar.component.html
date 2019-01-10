@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  <mat-sidenav #drawer class="sidenav " fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
 
 
@@ -7,13 +7,25 @@
 
     <div class="sidebar-img">
       <img src="../assets/profile.png" height="60px" width="60px" class="sidebar-profile-img">
-      <div class="sidebar-dialog">
+      <!-- <div class="sidebar-dialog">
         <a [matMenuTriggerFor]="menu"> Markarn Doe
-          <span>
-            <mat-icon svgIcon="down"></mat-icon>
+          <span >
+            <mat-icon class="down-icon" svgIcon="down"></mat-icon>
           </span>
         </a>
+      </div> -->
+
+      <div class="background">
+        <a [matMenuTriggerFor]="menu">
+          <div fxLayout="row">
+            <div class="sidebar-dialog1" flex> Markarn Doe</div>
+            <div class="down-icon1" flex>
+              <mat-icon class="down-icon" svgIcon="down"></mat-icon>
+            </div>
+          </div>
+        </a>
       </div>
+
     </div>
 
 
@@ -44,15 +56,16 @@
     <mat-nav-list>
       <div>
         <a mat-list-item href="#">
-          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <mat-icon class="sidebar-icon" svgIcon="dashboard"></mat-icon>
           <span class="sidenav-color">Dashboards </span>
         </a>
         <a mat-list-item href="#">
-          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <mat-icon class="sidebar-icon" svgIcon="material"></mat-icon>
           <span class="sidenav-color">Material Ui</span>
+          <span class="label">17</span>
         </a>
         <a mat-list-item href="#">
-          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <mat-icon class="sidebar-icon" svgIcon="app"></mat-icon>
           <span class="sidenav-color">Apps</span>
         </a>
       </div>
@@ -63,11 +76,11 @@
     <mat-nav-list>
       <div>
         <a mat-list-item href="#">
-          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <mat-icon class="sidebar-icon" svgIcon="forms"></mat-icon>
           <span class="sidenav-color">Forms</span>
         </a>
         <a mat-list-item href="#">
-          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <mat-icon class="sidebar-icon" svgIcon="table"></mat-icon>
           <span class="sidenav-color">Tables</span>
         </a>
         <a mat-list-item href="#">
@@ -75,13 +88,51 @@
           <span class="sidenav-color">Data Tables</span>
         </a>
         <a mat-list-item href="#">
-          <mat-icon class="sidebar-icon" svgIcon="client"></mat-icon>
+          <mat-icon class="sidebar-icon" svgIcon="widgets"></mat-icon>
           <span class="sidenav-color">Widgets</span>
         </a>
 
       </div>
     </mat-nav-list>
   </mat-sidenav>
+
+  <mat-sidenav class="sidenav-width" #drawer1 opened mode="side" position="end" [(opened)]="opened" (opened)="events.push('open!')"
+    (closed)="events.push('close!')">
+    <div class="close-icon">
+      <mat-icon (click)="drawer1.toggle()" class="close-icon" svgIcon="close"></mat-icon>
+    </div>
+    <div class="end-sidenav-heading" fxLayout="row">setting</div>
+    <div>
+      <mat-slide-toggle class="rtl">RTL</mat-slide-toggle>
+    </div>
+    <div>
+      <mat-slide-toggle class="rtl">Boxed Layout</mat-slide-toggle>
+    </div>
+
+    <mat-divider style="margin-top:30px;"> </mat-divider>
+    <div class="end-sidenav-heading" fxLayout="row">colors</div>
+    <div class="ripple red">
+      <mat-checkbox>Red</mat-checkbox>
+    </div>
+    <div class="ripple green">
+      <mat-checkbox>Teal Green</mat-checkbox>
+    </div>
+    <div class="ripple blue">
+      <mat-checkbox>Blue</mat-checkbox>
+    </div>
+    <div class="ripple">
+      <mat-checkbox>Dark</mat-checkbox>
+    </div>
+
+
+
+
+
+
+  </mat-sidenav>
+
+
+
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
@@ -93,12 +144,13 @@
       </span>
       <span style="margin-left:990px;">
         <a [matMenuTriggerFor]="notification">
-          <mat-icon svgIcon="comment"></mat-icon>
+          <!-- <mat-icon  svgIcon="comment"></mat-icon> -->
+          <mat-icon matBadge="3" matBadgeColor="warn">comment</mat-icon>
         </a>
       </span>
       <span style="margin-left:25px;">
         <a [matMenuTriggerFor]="messages">
-          <mat-icon svgIcon="email"></mat-icon>
+          <mat-icon matBadge="4" matBadgeColor="warn" svgIcon="email"></mat-icon>
         </a>
       </span>
       <span style="margin-left:25px;">
@@ -107,9 +159,8 @@
         </a>
       </span>
       <span style="margin-left:23px;">
-        <mat-icon svgIcon="setting"></mat-icon>
+        <mat-icon (click)="drawer1.toggle()" svgIcon="setting"></mat-icon>
       </span>
-
     </mat-toolbar>
 
     <mat-menu #notification="matMenu">
@@ -413,9 +464,11 @@
 
 
 
-
     <!-- <app-dashboard></app-dashboard> -->
 
     <!-- Add Content Here -->
   </mat-sidenav-content>
+
+
+
 </mat-sidenav-container>

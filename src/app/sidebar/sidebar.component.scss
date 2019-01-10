@@ -72,7 +72,6 @@
   background-color:rgba(63, 236, 236, 0.884);
   height: 200px;
   border-radius: 3%;
-
 }
 
 .thirdrow3
@@ -207,32 +206,60 @@
 .sidebar-icon
 {
   margin-top: 2px;
- 
+
 }
 
 .sidebar-img
 {
   height: 200px;
-  width: 400px;
+  width: 200px;
   background-image: url('/assets/sidebar.jpg');
   align-content: center;
  
 }
 
-.sidebar-dialog
+
+.down-icon
 {
-  width: 300px;
-  height: 37px;
-  margin-top: 61px;
+  margin-top: 10px;
+}
+
+.sidebar-dialog1
+{
+  
+  margin-top: 10px;
   font-size: 20px;
-  padding-left: 15px;
-  padding-top: 8px;
-  // background-color: rgba(255, 255, 255, 0.137);
-  background-color: rgba(0,0,0,.5);
   color: #fff!important;
   font-family: Poppins,sans-serif;
+  margin-left: 15px;
   
 }
+.down-icon1
+{
+  margin-top: 1px;
+  margin-left: 5px;
+  
+}
+
+.row-color
+{
+  background-color: rgba(0,0,0,.5);
+  
+}
+
+.background
+{
+  height: 40px;
+  width: 200px;
+  // border: 1px solid black;
+  margin-top: 65px;
+  background-color: rgba(0,0,0,.5);
+
+ 
+}
+
+
+
 
 .sidebar-profile-img
 {
@@ -245,11 +272,15 @@
 .sidenav-color
 {
   color: #99abb4!important;
+  margin-left: 15px;
+  font-size:18px;
+  font-family: Poppins,sans-serif;
+ 
 }
 
 .sidenav-font
 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .notification-text
@@ -285,5 +316,79 @@
 {
   border-radius: 50%;
 }
+
+.label {
+  
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: red;
+  padding: 3px 10px;
+}
+
+.end-sidenav-heading
+{
+  font-size: 22px;
+  font-family: Poppins,sans-serif;
+  margin-top: 30px;
+  margin-left: 50px;
+  color: rgba(255,255,255,.7);
+}
+
+.sidenav-width
+{
+  width: 300px;
+  
+ 
+}
+
+.rtl
+{
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top:20px;
+}
+
+.ripple
+{
+  
+  font-size: 20px;
+  font-family:Poppins,sans-serif;
+  margin-left: 20px; 
+  margin-top: 20px;
+  
+  
+}
+
+.red
+{
+  color:red;
+}
+
+.green
+{
+  color:green;
+}
+
+.blue
+{
+  color:blue;
+}
+
+.close-icon
+{
+  width: 50px;
+  width:50px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
 
 
