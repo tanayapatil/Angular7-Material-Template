@@ -89,6 +89,11 @@ export class SidebarComponent {
       iconRegistry.addSvgIcon(
         'widgets',
         sanitizer.bypassSecurityTrustResourceUrl('assets/widgets.svg'));
+
+        iconRegistry.addSvgIcon(
+          'admin',
+          sanitizer.bypassSecurityTrustResourceUrl('assets/admin.svg'));
+    
   
 
 

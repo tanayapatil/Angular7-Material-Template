@@ -8,7 +8,7 @@
 // }
 
 .sidenav {
-  width: 200px;
+  width: 250px;
 }
 
 .sidenav .mat-toolbar {
@@ -35,211 +35,32 @@
   width: 100%;
 }
 
-.firstrow
-{
-  background-color:rgba(128, 128, 128, 0.315);
-  height: 125px;
- border-radius: 3%;
-  
-  
-}
-
-.secondrow
-{
-  background-color:rgba(128, 128, 128, 0.315);
-  height: 500px;
-  border-radius: 3%;
-
-}
-
-.thirdrow1
-{
-  background-color:rgba(19, 151, 228, 0.884);
-  height: 200px;
-  border-radius: 3%;
 
 
-}
-.thirdrow
-{
-  background-color:rgba(137, 79, 202, 0.884);
-  height: 200px;
-  border-radius: 3%;
-
-}
-.thirdrow3
-{
-  background-color:rgba(63, 236, 236, 0.884);
-  height: 200px;
-  border-radius: 3%;
-}
-
-.thirdrow3
-{
-  background-color:rgba(63, 236, 236, 0.884);
-  height: 200px;
-
-}
-.fourthrow1
-{
-  background-color:rgba(128, 128, 128, 0.315);
-  height: 470px;
-  border-radius: 3%;
-
-}
-
-.fourthrow2
-{
-  background-color:rgba(128, 128, 128, 0.315);
-  height: 500px;
-  border-radius: 3%;
-
-}
-
-
-
-.circle
-{
-  height: 70px;
-  width: 70px;
-  
-  // border: 1px solid white;
-  border-radius:50%;
-  margin-left: 20%;
-  margin-top: 30%;
-  text-align: center;
-}
-.circle-1
-{
-  background-color: rgb(47, 226, 226);
-}
-
-
-.circle-yellow
-{
-  background-color: rgb(238, 129, 66);
-}
-.circle-blue
-{
-  background-color: rgb(47, 80, 226);
-}
-.circle-pink
-{
-  background-color: rgb(226, 47, 101);
-}
-.image
-{
-  margin-top: 38%;
-  
-}
-
-.iconalign
-{
-  
-  // background-color:blue;
-  text-align: center;
-}
-
-.first-row-text
-{
-  margin-top: 42px;
-  // font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  
-  
-}
-
-.rounded-border
-{
-  border-radius: 20px;
-}
-
-.third-row-text
-{
-  margin-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.third-text1
-{
-  font-size: 25px;
-
-}
-
-.third-text2
-{
-  font-size: 15px;
-  margin-top: 10px;
-
-}
-
-.third-text3
-{
-  font-size: 35px;
-
-}
-
-.button
-{
-  font-size:25px;
-  margin-left: 10px;
-}
-
-.profile-text
-{
-  margin-top: 60px;
-  margin-left: 90px;
-}
-
-.profile-button
-{
-  font-size:25px;
-  margin-left: 160px;
-
-}
-
-.profile-font
-{
-  font-size: 25px;
-}
-
-.sidebar-icon
-{
-  margin-top: 2px;
-
-}
 
 .sidebar-img
 {
   height: 200px;
-  width: 200px;
+  width: 250px;
   background-image: url('/assets/sidebar.jpg');
-  align-content: center;
+  // align-content: center;
  
 }
 
 
-.down-icon
-{
-  margin-top: 10px;
-}
 
-.sidebar-dialog1
+
+.sidebarUserName
 {
   
-  margin-top: 10px;
+ 
   font-size: 20px;
   color: #fff!important;
   font-family: Poppins,sans-serif;
-  margin-left: 15px;
+  
   
 }
-.down-icon1
-{
-  margin-top: 1px;
-  margin-left: 5px;
-  
-}
+
 
 .row-color
 {
@@ -250,9 +71,9 @@
 .background
 {
   height: 40px;
-  width: 200px;
+  width: 250px;
   // border: 1px solid black;
-  margin-top: 65px;
+  // margin-top: 65px;
   background-color: rgba(0,0,0,.5);
 
  
@@ -269,25 +90,29 @@
 
 
 
-.sidenav-color
+
+
+.sidenav-list
 {
-  color: #99abb4!important;
-  margin-left: 15px;
-  font-size:18px;
+  font-size: 18px;
   font-family: Poppins,sans-serif;
- 
+  color: #99abb4!important;
 }
 
-.sidenav-font
+.sidenav-list-heading
 {
-  font-size: 15px;
+  color: #99abb4!important;
+  font-family: Poppins,sans-serif;
+  font-size: 13px;
+
 }
 
 .notification-text
 {
-  display: block;
+ 
   color:white;
-  font-family:Poppins,sans-serif; 
+  font-family:Poppins,sans-serif;
+  font-size:13px; 
 }
 
 .notification-text-color
@@ -301,15 +126,17 @@
   font-size:16px;
   color:white;
   font-family:Poppins,sans-serif; 
+  font-weight: 400;
 }
 
 .notification-header
 {
-  margin-left: 40px;
+  // margin-left: 40px;
   font-size:23px;
   color:white;
   font-family:Poppins,sans-serif; 
   border-bottom: 1px solid rgba(120,130,140,.13);
+  font-weight: 500;
 }
 
 .rounded-img
@@ -330,11 +157,12 @@
 
 .end-sidenav-heading
 {
-  font-size: 22px;
+  font-size: 18px;
   font-family: Poppins,sans-serif;
-  margin-top: 30px;
-  margin-left: 50px;
+  // margin-top: 30px;
+  // margin-left: 50px;
   color: rgba(255,255,255,.7);
+  font-weight: 500;
 }
 
 .sidenav-width
@@ -346,9 +174,9 @@
 
 .rtl
 {
-  margin-left: 20px;
+  // margin-left: 20px;
   font-size: 20px;
-  margin-top:20px;
+  // margin-top:20px;
 }
 
 .ripple
@@ -356,32 +184,32 @@
   
   font-size: 20px;
   font-family:Poppins,sans-serif;
-  margin-left: 20px; 
-  margin-top: 20px;
+  // margin-left: 20px; 
+  // margin-top: 20px;
   
   
 }
 
 .red
 {
-  color:red;
+  color: #fc4b6c!important;
 }
 
 .green
 {
-  color:green;
+  color: #00897b;
 }
 
 .blue
 {
-  color:blue;
+  color: #1e88e5!important;
 }
 
 .close-icon
 {
   width: 50px;
   width:50px;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 
 
