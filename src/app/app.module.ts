@@ -16,6 +16,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { ChartComponent } from './chart/chart.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { RightSidenavComponent } from './right-sidenav/right-sidenav.component';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 
 
 
@@ -28,6 +31,9 @@ import { ChartComponent } from './chart/chart.component';
     TableComponent,
     DashboardComponent,
     ChartComponent,
+    ToolbarComponent,
+    RightSidenavComponent,
+   
     
   ],
   imports: [
@@ -61,7 +67,8 @@ import { ChartComponent } from './chart/chart.component';
      ChartsModule,
      MatBadgeModule,
      MatSlideToggleModule,
-     MatRippleModule
+     MatRippleModule,
+     NgMatSearchBarModule
 
       
   ],

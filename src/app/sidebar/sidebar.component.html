@@ -1,10 +1,16 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  <mat-sidenav #drawer fxFlex="20" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
 
-    <div fxLayout="column" class="sidebar-img" fxLayoutGap="120px">
+    <div fxLayout="column" class="sidebar-img" fxLayoutGap="60px">
+      <div fxFlex="5"></div>
       <div fxFlex="20">
-        <img src="../assets/profile.png" height="60px" width="60px">
+        <div fxLayout="row">
+          <div fxFlex="10"></div>
+          <div fxFlex="30">
+            <img src="../assets/profile.png" height="60px" width="60px">
+          </div>
+        </div>
       </div>
       <div fxFlex="40">
         <div class="background">
@@ -12,7 +18,7 @@
             <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
               <div class="sidebarUserName" fxflex="20"> Markarn Doe</div>
               <div fxFlex="20">
-                <mat-icon svgIcon="down"></mat-icon>
+                <mat-icon class="md-24">expand_more</mat-icon>
               </div>
             </div>
           </a>
@@ -47,74 +53,156 @@
     </mat-menu>
 
 
-    <mat-nav-list>
-      <mat-toolbar class="sidenav-list-heading">Personal</mat-toolbar>
+    <mat-nav-list >
+      <mat-toolbar class="sidenav-list-heading"><b>Personal</b></mat-toolbar>
+     
       <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
-          <div fxFlex="20">
-            <mat-icon svgIcon="dashboard"></mat-icon>
+          <div fxLayout="row" fxLayoutGap="7px" >
+              <div fxFlex></div>
+            <div fxFlex="20" class="sidenav-color">
+                <mat-icon class="md-24 ">av_timer</mat-icon>
+            </div>
+            <div class="sidenav-list" fxFlexFill>
+              Dashboard
+            </div>
+            <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+           
           </div>
-          <div class="sidenav-list" fxFlex="40">
-            Dashboards
-          </div>
-        </div>
-      </a>
+        </a>
+
 
       <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
-          <div fxFlex="20">
+        <div fxLayout="row" fxLayoutGap="10px" >
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
             <mat-icon svgIcon="material"></mat-icon>
           </div>
-          <div class="sidenav-list" fxFlex="40">
+          <div class="sidenav-list" fxFlexFill>
             Material Ui
+            <span class="label">17</span>
+           
           </div>
         </div>
       </a>
 
       <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="18px" fxLayoutAlign="center center">
-          <div fxFlex="20">
+        <div fxLayout="row" fxLayoutGap="15px" >
+            <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
             <mat-icon svgIcon="app"></mat-icon>
           </div>
-          <div class="sidenav-list" fxFlex="20">
+          <div class="sidenav-list" fxFlexFill>
             Apps
           </div>
+          <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+         
         </div>
       </a>
 
-      <mat-toolbar class="sidenav-list-heading">Forms,Table & Widgets</mat-toolbar>
+      <mat-toolbar class="sidenav-list-heading"><b>Forms,Table & Widgets</b></mat-toolbar>
+
+     
 
       <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="center center">
-          <div fxFlex="20">
-            <mat-icon svgIcon="forms"></mat-icon>
+          <div fxLayout="row" fxLayoutGap="13px" >
+              <div fxFlex></div>
+            <div fxFlex="20" class="sidenav-color">
+              <mat-icon svgIcon="forms"></mat-icon>
+            </div>
+            <div class="sidenav-list" fxFlexFill>
+             Forms
+            </div>
+            <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
           </div>
-          <div class="sidenav-list" fxFlex="20">
-            Forms
-          </div>
-        </div>
-      </a>
+        </a>
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="center center">
-          <div fxFlex="20">
-            <mat-icon svgIcon="table"></mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlex="20">
-            Tables
-          </div>
-        </div>
-      </a>
+        <a mat-list-item href="#">
+            <div fxLayout="row" fxLayoutGap="13px" >
+                <div fxFlex></div>
+              <div fxFlex="20" class="sidenav-color">
+                <mat-icon svgIcon="table"></mat-icon>
+              </div>
+              <div class="sidenav-list" fxFlexFill>
+                Tables
+              </div>
+              <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+            </div>
+          </a>
 
+          <a mat-list-item href="#">
+              <div fxLayout="row" fxLayoutGap="11px" >
+                  <div fxFlex></div>
+                <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24">widgets</mat-icon>
+                </div>
+                <div class="sidenav-list" fxFlexFill>
+                  widgets
+                </div>
+                <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+              </div>
+            </a>
+
+            <mat-toolbar class="sidenav-list-heading"><b>Extra Component</b></mat-toolbar>
+            <a mat-list-item href="#">
+                <div fxLayout="row" fxLayoutGap="12px" >
+                    <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                      <mat-icon class="md-24">assignment_ind</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                   Authemtication
+                  </div>
+                 
+                </div>
+              </a>
+
+              
+              <a mat-list-item href="#">
+                  <div fxLayout="row" fxLayoutGap="13px" >
+                      <div fxFlex></div>
+                    <div fxFlex="20" class="sidenav-color">
+                        <mat-icon class="md-24">poll</mat-icon>
+                    </div>
+                    <div class="sidenav-list" fxFlexFill>
+                     Charts
+                    </div>
+                    <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+                  </div>
+                </a>
+
+               
+                <a mat-list-item href="#">
+                    <div fxLayout="row" fxLayoutGap="13px" >
+                        <div fxFlex></div>
+                      <div fxFlex="20" class="sidenav-color">
+                          <mat-icon class="md-24">filter_none</mat-icon>
+                      </div>
+                      <div class="sidenav-list" fxFlexFill>
+                       Pages
+                      </div>
+                      <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+                    </div>
+                  </a>
+
+                 
+                  <a mat-list-item href="#">
+                      <div fxLayout="row" fxLayoutGap="4px" >
+                          <div fxFlex></div>
+                        <div fxFlex="20" class="sidenav-color">
+                            <mat-icon class="md-24">star</mat-icon>
+                        </div>
+                        <div class="sidenav-list" fxFlexFill>
+                         Menu Levels
+                        </div>
+                        <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+                      </div>
+                    </a>
+    
+  
+
+
+     
     </mat-nav-list>
-
-
-
-
-
-
-
-
 
   </mat-sidenav>
 
@@ -186,207 +274,38 @@
           </div>
         </div>
       </div>
-
-
-
     </div>
-
-
 
   </mat-sidenav>
 
+  
+  
+  <mat-sidenav-content fxFlex="80">
+   
 
-
-  <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>theme-demo</span>
+      <mat-icon class="md-24" (click)="myFunction()">search</mat-icon>
 
-
-      <div fxLayout="row" fxLayoutGap="970px" fxLayoutAlign="center center">
+      <app-toolbar></app-toolbar>
+      <div fxLayout="row" fxLayoutAlign="space-around center" >
         <div fxFlex="20">
-          <mat-icon svgIcon="search"></mat-icon>
-        </div>
-
-        <div fxFlex="60">
-          <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
-            <div flex>
-              <a [matMenuTriggerFor]="notification">
-                <mat-icon matBadge="3" matBadgeColor="warn">comment</mat-icon>
-              </a>
-            </div>
-
-            <div flex>
-              <a [matMenuTriggerFor]="messages">
-                <mat-icon matBadge="4" matBadgeColor="warn" svgIcon="email"></mat-icon>
-              </a>
-            </div>
-            <div flex>
-              <a [matMenuTriggerFor]="menu">
-                <img src="../assets/profile.png" height="40px" width="40px">
-              </a>
-            </div>
-            <div flex>
-              <mat-icon (click)="drawer1.toggle()" svgIcon="setting"></mat-icon>
-            </div>
-          </div>
-        </div>
+        <mat-icon (click)="drawer1.toggle()"  class="md-24">settings</mat-icon>
+      </div>
       </div>
     </mat-toolbar>
 
-   
-    <mat-menu #notification="matMenu">
-      <div fxLayout="column" fxLayoutGap="5px" style="width:200px;">
-
-        <div fxFlex="10">
-          <div fxLayout="row">
-            <div fxFlex="15"></div>
-            <div fxFlex="20" class="notification-header">Notifications</div>
-          </div>
-        </div>
-       
-
-        <div fxFlex="10">
-          <div fxLayout="row" fxLayoutGap="30px">
-            <div fxFlex="20">
-              <button mat-fab color="primary">
-                <mat-icon svgIcon="admin"></mat-icon>
-              </button>
-            </div>
-            <div fxFlex="60">
-              <div fxLayout="column" fxLayoutGap="5px">
-                <div fxFlex="20" class="notification-heading"><b>Launch Admin</b></div>
-                <div fxFlex="40" class="notification-text">Just see my new admin!</div>
-                <div fxFlex="40" class="notification-text">9.30AM</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div fxFlex="10">
-          <div fxLayout="row">
-            <div fxFlex="100"> <hr></div>
-          </div>
-        </div>
-        
-
-        <div fxFlex="10">
-            <div fxLayout="row" fxLayoutGap="30px">
-              <div fxFlex="20">
-                <button mat-fab color="accent">
-                  <mat-icon svgIcon="setting"></mat-icon>
-                </button>
-              </div>
-              <div fxFlex="60">
-                <div fxLayout="column" fxLayoutGap="5px">
-                  <div fxFlex="20" class="notification-heading"><b>Event today</b></div>
-                  <div fxFlex="40" class="notification-text">Just remind that you have</div>
-                  <div fxFlex="40" class="notification-text">9.30AM</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div fxFlex="10">
-              <div fxLayout="row">
-                <div fxFlex="100"> <hr></div>
-              </div>
-            </div>
-
-          <div fxFlex="10">
-              <div fxLayout="row" fxLayoutGap="30px">
-                <div fxFlex="20">
-                  <button mat-fab color="warn">
-                    <mat-icon svgIcon="setting"></mat-icon>
-                  </button>
-                </div>
-                <div fxFlex="60">
-                  <div fxLayout="column" fxLayoutGap="5px">
-                    <div fxFlex="20" class="notification-heading"><b>Settings</b></div>
-                    <div fxFlex="40" class="notification-text">You can customize this tamplate</div>
-                    <div fxFlex="40" class="notification-text">9.30AM</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-     
-
-
-
-      </div>
-
-    </mat-menu>
-
-    <mat-menu #messages="matMenu">
-      <div mat-menu-panel class="notification-header">New Messages</div>
-      <div mat-menu-content style="width:250px;">
-
-        <div fxLayout="row" style="margin-top:10px;">
-          <div flex>
-            <img src="../assets/profile.png" height="40px" width="40px">
-          </div>
-          <div flex style="margin-left:10px;">
-            <b class="notification-heading">Pawan Kumar</b>
-            <span class="notification-text">just see my new admin</span>
-            <span class="notification-text">9.30AM</span>
-          </div>
-        </div>
-
-        <div fxLayout="row" style="margin-top:10px;">
-          <div flex>
-            <img src="../assets/2.jpg" height="40px" width="40px" class="rounded-img">
-          </div>
-          <div flex style="margin-left:10px;">
-            <b class="notification-heading">Sonu Nigam</b>
-            <span class="notification-text">just see my new admin</span>
-            <span class="notification-text">9.30AM</span>
-          </div>
-        </div>
-
-        <div fxLayout="row" style="margin-top:10px;">
-          <div flex>
-            <img src="../assets/3.jpg" height="40px" width="40px" class="rounded-img">
-          </div>
-          <div flex style="margin-left:10px;">
-            <b class="notification-heading">Arjit Sign</b>
-            <span class="notification-text">just see my new admin</span>
-            <span class="notification-text">9.30AM</span>
-          </div>
-        </div>
-
-        <div fxLayout="row" style="margin-top:10px;">
-          <div flex>
-            <img src="../assets/2.jpg" height="40px" width="40px" class="rounded-img">
-          </div>
-          <div flex style="margin-left:10px;">
-            <b class="notification-heading">Sonu Nigam</b>
-            <span class="notification-text">just see my new admin</span>
-            <span class="notification-text">9.30AM</span>
-          </div>
-        </div>
-
-
-      </div>
-
-     
-
-      
-    </mat-menu>
-
-
-
+  
     <br>
     <!-- <br> -->
 
     <app-home></app-home>
 
-
-
     <!-- Add Content Here -->
   </mat-sidenav-content>
-
 
 
 </mat-sidenav-container>

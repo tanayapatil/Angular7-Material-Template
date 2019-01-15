@@ -20,10 +20,10 @@ export class SidebarComponent {
       map(result => result.matches)
     );
 
-
   typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
+
   constructor(private breakpointObserver: BreakpointObserver, iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
@@ -54,9 +54,9 @@ export class SidebarComponent {
       'email',
       sanitizer.bypassSecurityTrustResourceUrl('assets/email.svg'));
 
-    iconRegistry.addSvgIcon(
-      'search',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/search.svg'));
+    // iconRegistry.addSvgIcon(
+    //   'search',
+    //   sanitizer.bypassSecurityTrustResourceUrl('assets/search.svg'));
 
     iconRegistry.addSvgIcon(
       'down',
@@ -86,20 +86,16 @@ export class SidebarComponent {
       'table',
       sanitizer.bypassSecurityTrustResourceUrl('assets/table.svg'));
 
-      iconRegistry.addSvgIcon(
-        'widgets',
-        sanitizer.bypassSecurityTrustResourceUrl('assets/widgets.svg'));
+    iconRegistry.addSvgIcon(
+      'widgets',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/widgets.svg'));
 
-        iconRegistry.addSvgIcon(
-          'admin',
-          sanitizer.bypassSecurityTrustResourceUrl('assets/admin.svg'));
-    
-  
-
-
-
-
+    iconRegistry.addSvgIcon(
+      'admin',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/admin.svg'));
 
   }
+
+ 
 
 }

@@ -1,0 +1,209 @@
+<div fxLayout="row" fxLayoutGap="950px" fxLayoutAlign="center center">
+  <div fxFlex="20">
+      <!-- <a [matMenuTriggerFor]="search">
+      <mat-icon class="md-24">search</mat-icon>
+    </a> -->
+   
+  </div>
+
+  <div fxFlex="60">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <div flex>
+        <a [matMenuTriggerFor]="notification">
+
+          <mat-icon matBadge="3" matBadgeColor="warn" class="md-24">message</mat-icon>
+        </a>
+      </div>
+
+      <div flex>
+        <a [matMenuTriggerFor]="messages">
+
+          <mat-icon matBadge="3" matBadgeColor="warn" class="md-24">email</mat-icon>
+        </a>
+      </div>
+      <div flex>
+        <a [matMenuTriggerFor]="menu">
+          <img src="../assets/profile.png" height="40px" width="40px">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<mat-menu #notification="matMenu" class="notification-width">
+  <div fxLayout="column" fxLayoutGap="5px">
+
+    <div fxFlex="10">
+      <div fxLayout="row">
+        <div fxFlex="15"></div>
+        <div fxFlex="20" class="notification-header">Notifications</div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div fxFlex="20">
+          <button mat-fab color="primary">
+            <mat-icon svgIcon="admin"></mat-icon>
+          </button>
+        </div>
+        <div fxFlex="60">
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="20" class="notification-heading"><b>Launch Admin</b></div>
+            <div fxFlex="40" class="notification-text">Just see my new admin!</div>
+            <div fxFlex="40" class="notification-text">9.30AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row">
+        <div fxFlex="100">
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div fxFlex="20">
+          <button mat-fab color="accent">
+            <mat-icon svgIcon="setting"></mat-icon>
+          </button>
+        </div>
+        <div fxFlex="60">
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="20" class="notification-heading"><b>Event today</b></div>
+            <div fxFlex="40" class="notification-text">Just remind that you have</div>
+            <div fxFlex="40" class="notification-text">9.30AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row">
+        <div fxFlex="100">
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div fxFlex="20">
+          <button mat-fab color="warn">
+            <mat-icon svgIcon="setting"></mat-icon>
+          </button>
+        </div>
+        <div fxFlex="60">
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="20" class="notification-heading"><b>Settings</b></div>
+            <div fxFlex="40" class="notification-text">You can customize this tamplate</div>
+            <div fxFlex="40" class="notification-text">9.30AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-menu>
+
+<mat-menu #messages="matMenu" class="notification-width">
+
+  <div fxLayout="column" fxLayoutGap="5px">
+    <div fxFlex="10">
+      <div fxLayout="row">
+        <div fxFlex="15"></div>
+        <div fxFlex class="notification-header">New Massages</div>
+      </div>
+    </div>
+    <div fxFlex="10">
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div fxFlex="20">
+          <img src="../assets/profile.png" height="60px" width="60px">
+        </div>
+        <div fxFlex="60">
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="20" class="notification-heading"><b>Pawan Kumar</b></div>
+            <div fxFlex="40" class="notification-text">Just see my new admin!</div>
+            <div fxFlex="40" class="notification-text">9.30AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row">
+        <div fxFlex="100">
+          <hr>
+        </div>
+      </div>
+    </div>
+
+
+    <div fxFlex="10">
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div fxFlex="20">
+          <img src="../assets/2.jpg" height="60px" width="60px" class="rounded-img">
+        </div>
+        <div fxFlex="60">
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="20" class="notification-heading"><b>Sonu Nigam</b></div>
+            <div fxFlex="40" class="notification-text">Just remind that you have</div>
+            <div fxFlex="40" class="notification-text">9.30AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row">
+        <div fxFlex="100">
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="10">
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div fxFlex="20">
+          <img src="../assets/3.jpg" height="60px" width="60px" class="rounded-img">
+        </div>
+        <div fxFlex="60">
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="20" class="notification-heading"><b>Arjit Sing</b></div>
+            <div fxFlex="40" class="notification-text">You can customize this tamplate</div>
+            <div fxFlex="40" class="notification-text">9.30AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-menu>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon svgIcon="setting"></mat-icon>
+    <span>Setting</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon svgIcon="myprofile"></mat-icon>
+    <span>Profile</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon svgIcon="disablenotification"></mat-icon>
+    <span>Disable notification</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon svgIcon="signout"></mat-icon>
+    <span>Sign out</span>
+  </button>
+</mat-menu>
+
+
+
+
