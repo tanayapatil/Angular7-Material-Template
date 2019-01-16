@@ -1,7 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer fxFlex="20" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
-
     <div fxLayout="column" class="sidebar-img" fxLayoutGap="60px">
       <div fxFlex="5"></div>
       <div fxFlex="20">
@@ -23,10 +22,7 @@
             </div>
           </a>
         </div>
-
       </div>
-
-
     </div>
 
 
@@ -53,26 +49,26 @@
     </mat-menu>
 
 
-    <mat-nav-list >
+    <mat-nav-list>
       <mat-toolbar class="sidenav-list-heading"><b>Personal</b></mat-toolbar>
-     
+
       <a mat-list-item href="#">
-          <div fxLayout="row" fxLayoutGap="7px" >
-              <div fxFlex></div>
-            <div fxFlex="20" class="sidenav-color">
-                <mat-icon class="md-24 ">av_timer</mat-icon>
-            </div>
-            <div class="sidenav-list" fxFlexFill>
-              Dashboard
-            </div>
-            <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-           
+        <div fxLayout="row" fxLayoutGap="7px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon class="md-24 ">av_timer</mat-icon>
           </div>
-        </a>
+          <div class="sidenav-list" fxFlexFill>
+            Dashboard
+          </div>
+          <!-- <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div> -->
+
+        </div>
+      </a>
 
 
       <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="10px" >
+        <div fxLayout="row" fxLayoutGap="10px">
           <div fxFlex></div>
           <div fxFlex="20" class="sidenav-color">
             <mat-icon svgIcon="material"></mat-icon>
@@ -80,133 +76,200 @@
           <div class="sidenav-list" fxFlexFill>
             Material Ui
             <span class="label">17</span>
-           
+
           </div>
         </div>
       </a>
 
       <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="15px" >
-            <div fxFlex></div>
+        <div fxLayout="row" fxLayoutGap="15px">
+          <div fxFlex></div>
           <div fxFlex="20" class="sidenav-color">
             <mat-icon svgIcon="app"></mat-icon>
           </div>
           <div class="sidenav-list" fxFlexFill>
             Apps
           </div>
-          <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-         
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+
         </div>
       </a>
 
       <mat-toolbar class="sidenav-list-heading"><b>Forms,Table & Widgets</b></mat-toolbar>
 
-     
+
 
       <a mat-list-item href="#">
-          <div fxLayout="row" fxLayoutGap="13px" >
-              <div fxFlex></div>
-            <div fxFlex="20" class="sidenav-color">
-              <mat-icon svgIcon="forms"></mat-icon>
-            </div>
-            <div class="sidenav-list" fxFlexFill>
-             Forms
-            </div>
-            <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
+        <div fxLayout="row" fxLayoutGap="13px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon svgIcon="forms"></mat-icon>
           </div>
-        </a>
+          <div class="sidenav-list" fxFlexFill>
+            Forms
+          </div>
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+        </div>
+      </a>
 
-        <a mat-list-item href="#">
-            <div fxLayout="row" fxLayoutGap="13px" >
-                <div fxFlex></div>
-              <div fxFlex="20" class="sidenav-color">
-                <mat-icon svgIcon="table"></mat-icon>
-              </div>
-              <div class="sidenav-list" fxFlexFill>
-                Tables
-              </div>
-              <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-            </div>
-          </a>
+      <a mat-list-item href="#">
+        <div fxLayout="row" fxLayoutGap="13px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon svgIcon="table"></mat-icon>
+          </div>
+          <div class="sidenav-list" fxFlexFill>
+            Tables
+          </div>
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+        </div>
+      </a>
 
-          <a mat-list-item href="#">
-              <div fxLayout="row" fxLayoutGap="11px" >
-                  <div fxFlex></div>
-                <div fxFlex="20" class="sidenav-color">
-                    <mat-icon class="md-24">widgets</mat-icon>
-                </div>
-                <div class="sidenav-list" fxFlexFill>
-                  widgets
-                </div>
-                <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-              </div>
-            </a>
+      <a mat-list-item href="#">
+        <div fxLayout="row" fxLayoutGap="11px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon class="md-24">widgets</mat-icon>
+          </div>
+          <div class="sidenav-list" fxFlexFill>
+            widgets
+          </div>
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+        </div>
+      </a>
 
-            <mat-toolbar class="sidenav-list-heading"><b>Extra Component</b></mat-toolbar>
-            <a mat-list-item href="#">
-                <div fxLayout="row" fxLayoutGap="12px" >
-                    <div fxFlex></div>
-                  <div fxFlex="20" class="sidenav-color">
-                      <mat-icon class="md-24">assignment_ind</mat-icon>
-                  </div>
-                  <div class="sidenav-list" fxFlexFill>
-                   Authemtication
-                  </div>
-                 
-                </div>
-              </a>
+      <mat-toolbar class="sidenav-list-heading"><b>Extra Component</b></mat-toolbar>
+      <a mat-list-item href="#">
+        <div fxLayout="row" fxLayoutGap="12px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon class="md-24">assignment_ind</mat-icon>
+          </div>
+          <div class="sidenav-list" fxFlexFill>
+            Authemtication
+          </div>
 
-              
-              <a mat-list-item href="#">
-                  <div fxLayout="row" fxLayoutGap="13px" >
-                      <div fxFlex></div>
-                    <div fxFlex="20" class="sidenav-color">
-                        <mat-icon class="md-24">poll</mat-icon>
-                    </div>
-                    <div class="sidenav-list" fxFlexFill>
-                     Charts
-                    </div>
-                    <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-                  </div>
-                </a>
-
-               
-                <a mat-list-item href="#">
-                    <div fxLayout="row" fxLayoutGap="13px" >
-                        <div fxFlex></div>
-                      <div fxFlex="20" class="sidenav-color">
-                          <mat-icon class="md-24">filter_none</mat-icon>
-                      </div>
-                      <div class="sidenav-list" fxFlexFill>
-                       Pages
-                      </div>
-                      <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-                    </div>
-                  </a>
-
-                 
-                  <a mat-list-item href="#">
-                      <div fxLayout="row" fxLayoutGap="4px" >
-                          <div fxFlex></div>
-                        <div fxFlex="20" class="sidenav-color">
-                            <mat-icon class="md-24">star</mat-icon>
-                        </div>
-                        <div class="sidenav-list" fxFlexFill>
-                         Menu Levels
-                        </div>
-                        <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div>
-                      </div>
-                    </a>
-    
-  
+        </div>
+      </a>
 
 
-     
+      <a mat-list-item href="#">
+        <div fxLayout="row" fxLayoutGap="13px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon class="md-24">poll</mat-icon>
+          </div>
+          <div class="sidenav-list" fxFlexFill>
+            Charts
+          </div>
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+        </div>
+      </a>
+
+
+      <a mat-list-item href="#">
+        <div fxLayout="row" fxLayoutGap="13px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon class="md-24">filter_none</mat-icon>
+          </div>
+          <div class="sidenav-list" fxFlexFill>
+            Pages
+          </div>
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+        </div>
+      </a>
+
+
+      <a mat-list-item href="#">
+        <div fxLayout="row" fxLayoutGap="4px">
+          <div fxFlex></div>
+          <div fxFlex="20" class="sidenav-color">
+            <mat-icon class="md-24">star</mat-icon>
+          </div>
+          <div class="sidenav-list" fxFlexFill>
+            Menu Levels
+          </div>
+          <div fxFlex="5" class="sidenav-color">
+            <mat-icon class="md-24">expand_more</mat-icon>
+          </div>
+        </div>
+      </a>
+
+
+
+
+
     </mat-nav-list>
 
   </mat-sidenav>
 
-  <mat-sidenav class="sidenav-width" #drawer1 opened mode="side" position="end" [(opened)]="opened" (opened)="events.push('open!')"
+
+
+
+
+  <mat-sidenav-content fxFlex>
+
+
+    <mat-toolbar fxLayout="row" color="primary" *ngIf="temp">
+      <span fxFlex="17">
+
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>MATERIAL <span>PRO</span></span>
+         <mat-icon class="md-24" (click)="myFunction()">search</mat-icon>
+      </span>
+
+      <span fxFlex="78">
+
+        <app-toolbar></app-toolbar>
+      </span>
+      <span fxFlex="5" fxLayoutAlign="center center">
+
+        <mat-icon (click)="drawer1.toggle()" class="md-50">settings</mat-icon>
+
+      </span>
+    </mat-toolbar>
+
+    <mat-toolbar *ngIf="!temp" style="background-color:white;"   >
+      <div fxLayout="row"  class="sidebar-color">
+        <div fxFlex="70" fxFill>
+        <input  class="search-bar" placeholder="Search & enter">
+      </div>
+       
+      </div>
+
+      <!-- <div fxLayout="row">
+        <div fxFlex fxLayout="row" fxFill>
+          <input type="text" >
+        </div>
+      </div> -->
+      
+      
+    </mat-toolbar>
+
+
+    <br>
+    <!-- <br> -->
+
+    <app-home></app-home>
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+  <mat-sidenav class="sidenav-width" #drawer1 opened mode="push" position="end" [(opened)]="opened" (opened)="events.push('open!')"
     (closed)="events.push('close!')">
     <div class="close-icon">
       <mat-icon (click)="drawer1.toggle()" class="close-icon" svgIcon="close"></mat-icon>
@@ -277,35 +340,6 @@
     </div>
 
   </mat-sidenav>
-
-  
-  
-  <mat-sidenav-content fxFlex="80">
-   
-
-    <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>theme-demo</span>
-      <mat-icon class="md-24" (click)="myFunction()">search</mat-icon>
-
-      <app-toolbar></app-toolbar>
-      <div fxLayout="row" fxLayoutAlign="space-around center" >
-        <div fxFlex="20">
-        <mat-icon (click)="drawer1.toggle()"  class="md-24">settings</mat-icon>
-      </div>
-      </div>
-    </mat-toolbar>
-
-  
-    <br>
-    <!-- <br> -->
-
-    <app-home></app-home>
-
-    <!-- Add Content Here -->
-  </mat-sidenav-content>
 
 
 </mat-sidenav-container>

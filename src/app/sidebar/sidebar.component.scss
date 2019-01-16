@@ -15,6 +15,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #2196f3;
+  height: 80px;
 }
 
 .example-form {
@@ -58,6 +60,8 @@
   font-size: 19px;
   font-family: Poppins,sans-serif;
   color: #99abb4!important;
+  
+
 }
 
 .sidenav-color{
@@ -96,6 +100,7 @@
 
 .sidenav-width{
   width: 250px;
+
 }
 
 .rtl{
@@ -127,6 +132,26 @@
 mat-list-item.selected{
   background-color: #fc4b6c;
 }
+
+.is-active{
+  background: #26c6da;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.search-bar{
+  width:100%;
+  border: none;
+  
+}
+
+// .sidebar-color {
+//   position: sticky;
+//   top: 0;
+//   z-index: 1;
+//   background-color:white;
+//   height: 80px;
+// }
 
 
 

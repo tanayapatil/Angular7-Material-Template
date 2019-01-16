@@ -20,9 +20,9 @@ export class SidebarComponent {
       map(result => result.matches)
     );
 
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
-  myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
+  // typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  // myControl = new FormControl();
+  // options: string[] = ['One', 'Two', 'Three'];
 
   constructor(private breakpointObserver: BreakpointObserver, iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer) {
@@ -96,6 +96,13 @@ export class SidebarComponent {
 
   }
 
+ temp:boolean=true
  
+  myFunction()
+  {
+  
+    this.temp=false
+  }
+
 
 }

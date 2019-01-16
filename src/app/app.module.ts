@@ -19,6 +19,9 @@ import { ChartComponent } from './chart/chart.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RightSidenavComponent } from './right-sidenav/right-sidenav.component';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+
 
 
 
@@ -33,6 +36,8 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
     ChartComponent,
     ToolbarComponent,
     RightSidenavComponent,
+    PieChartComponent,
+    BarChartComponent,
    
     
   ],
