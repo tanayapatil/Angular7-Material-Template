@@ -14,7 +14,7 @@ import { MatIconRegistry } from '@angular/material';
   encapsulation: ViewEncapsulation.None
 })
 export class SidebarComponent {
-
+  panelOpenState=false
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
@@ -102,6 +102,11 @@ export class SidebarComponent {
   {
   
     this.temp=false
+  }
+
+  closeSearch()
+  {
+    this.temp=true
   }
 
 

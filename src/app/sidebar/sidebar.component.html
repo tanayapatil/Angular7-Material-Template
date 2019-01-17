@@ -25,8 +25,6 @@
       </div>
     </div>
 
-
-
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
         <mat-icon svgIcon="setting"></mat-icon>
@@ -52,161 +50,309 @@
     <mat-nav-list>
       <mat-toolbar class="sidenav-list-heading"><b>Personal</b></mat-toolbar>
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="7px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon class="md-24 ">av_timer</mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Dashboard
-          </div>
-          <!-- <div fxFlex="5" class="sidenav-color"> <mat-icon class="md-24">expand_more</mat-icon></div> -->
+      <mat-accordion>
+      <div mat-list-item>
+       
 
-        </div>
-      </a>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="7px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24 ">av_timer</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Dashboard
+                  </div>
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
 
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="10px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon svgIcon="material"></mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Material Ui
-            <span class="label">17</span>
+        <!-- </div> -->
+      </div>
 
-          </div>
-        </div>
-      </a>
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="15px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon svgIcon="app"></mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Apps
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
+      <div mat-list-item>
+        
 
-        </div>
-      </a>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="10px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon svgIcon="material"></mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Material Ui
+                    <span class="label">17</span>
+                  </div>
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
+
+      <div mat-list-item>
+        
+
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="15px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon svgIcon="app"></mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Apps
+                  </div>
+
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
 
       <mat-toolbar class="sidenav-list-heading"><b>Forms,Table & Widgets</b></mat-toolbar>
 
 
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="13px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon svgIcon="forms"></mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Forms
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
-        </div>
-      </a>
+      <div mat-list-item>
+        
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="13px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon svgIcon="table"></mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Tables
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
-        </div>
-      </a>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="13px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon svgIcon="forms"></mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Forms
+                  </div>
 
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="11px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon class="md-24">widgets</mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            widgets
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
-        </div>
-      </a>
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
+
+      <div mat-list-item>
+        
+
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="13px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon svgIcon="table"></mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Tables
+                  </div>
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
+
+      <div mat-list-item>
+        
+
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="11px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24">widgets</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    widgets
+                  </div>
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
 
       <mat-toolbar class="sidenav-list-heading"><b>Extra Component</b></mat-toolbar>
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="12px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon class="md-24">assignment_ind</mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Authemtication
-          </div>
+      <div mat-list-item>
+        
 
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="12px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24">assignment_ind</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Authemtication
+                  </div>
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
+
+
+      <div mat-list-item>
+        
+
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="13px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24">poll</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Charts
+                  </div>
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
+
+
+      <div mat-list-item>
+        
+
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="13px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24">filter_none</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Pages
+                  </div>
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+        
+      </div>
+
+
+      <div mat-list-item>
+        
+
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div fxLayout="row" fxLayoutGap="4px">
+                  <div fxFlex></div>
+                  <div fxFlex="20" class="sidenav-color">
+                    <mat-icon class="md-24">star</mat-icon>
+                  </div>
+                  <div class="sidenav-list" fxFlexFill>
+                    Menu Levels
+                  </div>
+
+                </div>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list role="list">
+              <mat-list-item role="listitem">Item 1</mat-list-item>
+              <mat-list-item role="listitem">Item 2</mat-list-item>
+              <mat-list-item role="listitem">Item 3</mat-list-item>
+            </mat-list>
+
+          </mat-expansion-panel>
+          
         </div>
-      </a>
-
-
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="13px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon class="md-24">poll</mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Charts
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
-        </div>
-      </a>
-
-
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="13px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon class="md-24">filter_none</mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Pages
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
-        </div>
-      </a>
-
-
-      <a mat-list-item href="#">
-        <div fxLayout="row" fxLayoutGap="4px">
-          <div fxFlex></div>
-          <div fxFlex="20" class="sidenav-color">
-            <mat-icon class="md-24">star</mat-icon>
-          </div>
-          <div class="sidenav-list" fxFlexFill>
-            Menu Levels
-          </div>
-          <div fxFlex="5" class="sidenav-color">
-            <mat-icon class="md-24">expand_more</mat-icon>
-          </div>
-        </div>
-      </a>
+      </mat-accordion>
 
 
 
@@ -229,8 +375,13 @@
         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span>MATERIAL <span>PRO</span></span>
-         <mat-icon class="md-24" (click)="myFunction()">search</mat-icon>
+        <span>
+          <img src="../assets/logo-light-icon.png" height="40px" width="40px">
+          <span>
+            <img src="../assets/logo-light-text.png">
+          </span>
+        </span>
+        <mat-icon class="md-24" (click)="myFunction()">search</mat-icon>
       </span>
 
       <span fxFlex="78">
@@ -244,30 +395,21 @@
       </span>
     </mat-toolbar>
 
-    <mat-toolbar *ngIf="!temp" style="background-color:white;"   >
-      <div fxLayout="row"  class="sidebar-color">
-        <div fxFlex="70" fxFill>
-        <input  class="search-bar" placeholder="Search & enter">
+    <mat-toolbar fxLayout="row" class="sidebar-color" *ngIf="!temp" style="background-color:white;" color="primary"
+      fxLayoutGap="10px">
+      <div fxFlex="99">
+        <input class="search-bar" placeholder="Search & enter">
       </div>
-       
+      <div fxFlex="1" style="color:black;">
+        <mat-icon class="md-24" (click)="closeSearch()">clear</mat-icon>
       </div>
-
-      <!-- <div fxLayout="row">
-        <div fxFlex fxLayout="row" fxFill>
-          <input type="text" >
-        </div>
-      </div> -->
-      
-      
     </mat-toolbar>
 
-
     <br>
-    <!-- <br> -->
-
     <app-home></app-home>
 
     <!-- Add Content Here -->
+
   </mat-sidenav-content>
   <mat-sidenav class="sidenav-width" #drawer1 opened mode="push" position="end" [(opened)]="opened" (opened)="events.push('open!')"
     (closed)="events.push('close!')">

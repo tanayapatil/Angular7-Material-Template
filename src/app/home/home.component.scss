@@ -54,10 +54,50 @@
 .fourthrow2
 {
   background-color:rgba(128, 128, 128, 0.315);
-  height: 500px;
+  height: 540px;
   border-radius: 3%;
 
 }
+
+.card
+{
+  background-color:rgba(128, 128, 128, 0.315);
+  height: 470px;
+  border-radius: 3%;
+
+}
+
+.card-text{
+  font-size: 25px;
+}
+
+.card-text1{
+  font-size: 19px;
+}
+
+.activity-card{
+  background-color:rgba(128, 128, 128, 0.315);
+  // height: 620px;
+  border-radius: 3%;
+
+}
+
+.input-width{
+  width:100%;
+}
+
+.formLayout{
+  font-size:23px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+::placeholder {
+  color: #99abb4!important;
+  
+ 
+}
+
 
 
 
@@ -182,11 +222,31 @@
 .profile-button
 {
   font-size:25px;
-  margin-left: 160px;
+  // margin-left: 160px;
 
 }
 
-.profile-font
-{
+.profile-font{
   font-size: 25px;
+}
+
+.round-image{
+  border-radius: 50%
+}
+
+.activity-text{
+  color: #99abb4!important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+
+.activity-user{
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chart-size{
+  height: 70px;
+  width:146px;
 }
