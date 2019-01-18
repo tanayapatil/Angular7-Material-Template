@@ -12,6 +12,7 @@ import { TabsComponent } from './tabs/tabs.component';
   declarations: [BadgeComponent, ButtonComponent, CardsComponent, GridListComponent, ListComponent, MenuComponent, TabsComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[BadgeComponent, ButtonComponent, CardsComponent, GridListComponent, ListComponent, MenuComponent, TabsComponent]
 })
 export class MaterialUiModule { }

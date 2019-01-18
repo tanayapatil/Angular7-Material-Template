@@ -50,11 +50,11 @@
     <mat-nav-list>
       <mat-toolbar class="sidenav-list-heading"><b>Personal</b></mat-toolbar>
 
-      <mat-accordion>
-      <div mat-list-item>
+      <mat-accordion >
+      <div mat-list-item >
        
 
-          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel  (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
             <mat-expansion-panel-header>
               <mat-panel-title>
                 <div fxLayout="row" fxLayoutGap="7px">
@@ -69,10 +69,10 @@
               </mat-panel-title>
 
             </mat-expansion-panel-header>
-            <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+            <mat-list role="list" >
+              <mat-list-item [routerLink]='["/home"]' [routerLinkActive]='active' role="listitem" class="sidenav-list">Dashboard1</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Dashboard2</mat-list-item>
+              
             </mat-list>
 
           </mat-expansion-panel>
@@ -103,9 +103,13 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+<mat-list-item [routerLink]='["/badge"]' role="listitem" class="sidenav-list">Badge</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Buttons</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Cards</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Grid List</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Lists</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Menu</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Tabs</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -133,9 +137,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Calender</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Mail Box</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Chat</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -166,9 +170,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Form Layout</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Autocomplete</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Checkbox</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -195,9 +199,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Bsic Table</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Filterable Table</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Mix Table</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -224,9 +228,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Item 1</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Item 2</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Item 3</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -254,9 +258,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Login</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Rgister</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Forgot</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -284,9 +288,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Chart Js</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Chartlist Js</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Ngx Charts</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -314,9 +318,9 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Timeline</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Invoice</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Pricing</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -344,9 +348,7 @@
 
             </mat-expansion-panel-header>
             <mat-list role="list">
-              <mat-list-item role="listitem">Item 1</mat-list-item>
-              <mat-list-item role="listitem">Item 2</mat-list-item>
-              <mat-list-item role="listitem">Item 3</mat-list-item>
+              <mat-list-item role="listitem" class="sidenav-list">Second level</mat-list-item>
             </mat-list>
 
           </mat-expansion-panel>
@@ -368,7 +370,7 @@
 
   <mat-sidenav-content fxFlex>
 
-
+    
     <mat-toolbar fxLayout="row" color="primary" *ngIf="temp">
       <span fxFlex="17">
 
@@ -406,7 +408,9 @@
     </mat-toolbar>
 
     <br>
-    <app-home></app-home>
+    <router-outlet></router-outlet>
+
+    <!-- <app-home></app-home> -->
 
     <!-- Add Content Here -->
 

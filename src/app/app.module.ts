@@ -46,6 +46,8 @@ import {
   MatExpansionModule
 } from '@angular/material';
 
+import { MaterialUiModule } from './material-ui/material-ui.module';
+
 
 
 
@@ -101,7 +103,9 @@ import {
     MatRippleModule,
     NgMatSearchBarModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MaterialUiModule
+    
 
 
 
